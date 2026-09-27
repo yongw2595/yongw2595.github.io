@@ -12,7 +12,7 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 13:00:00 +0800</lastBuildDate>
     
     
     <atom:link href="https://yongw2595.github.io/post/index.xml" rel="self" type="application/rss&#43;xml" />
@@ -22,17 +22,62 @@
     
 
     <item>
-      <title>Hello World</title>
-      <link>https://yongw2595.github.io/post/hello/</link>
-      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <title>2026年9月21日—9月27日学习周报</title>
+      <link>https://yongw2595.github.io/post/2026-09-27-weekly-report-2/</link>
+      <pubDate>Sun, 27 Sep 2026 13:00:00 &#43;0800</pubDate>
       <author>xxx@example.com (reimu)</author>
-      <guid>https://yongw2595.github.io/post/hello/</guid>
+      <guid>https://yongw2595.github.io/post/2026-09-27-weekly-report-2/</guid>
       <description>
-        <![CDATA[<h1>Hello World</h1><p>作者：reimu（xxx@example.com）</p>
+        <![CDATA[<h1>2026年9月21日—9月27日学习周报</h1><p>作者：reimu（xxx@example.com）</p>
         
-          <p>💘 博麗 霊夢 💘</p>
+          <h1 id="2026年9月21日9月27日学习周报">
+<a class="header-anchor" href="#2026%e5%b9%b49%e6%9c%8821%e6%97%a59%e6%9c%8827%e6%97%a5%e5%ad%a6%e4%b9%a0%e5%91%a8%e6%8a%a5"></a>
+2026年9月21日—9月27日学习周报
+</h1><h2 id="一本周学习内容">
+<a class="header-anchor" href="#%e4%b8%80%e6%9c%ac%e5%91%a8%e5%ad%a6%e4%b9%a0%e5%86%85%e5%ae%b9"></a>
+一、本周学习内容
+</h2><h3 id="9月21日">
+<a class="header-anchor" href="#9%e6%9c%8821%e6%97%a5"></a>
+9月21日
+</h3><p>本日主要学习 Python 编程基础知识，学习了《Python编程：从⼊门到实践》前8章。重点学习 Python 的基本语法、变量与数据类型、条件判断、循环、函数等内容。</p>
+<h3 id="9月22日">
+<a class="header-anchor" href="#9%e6%9c%8822%e6%97%a5"></a>
+9月22日
+</h3><p>继续学习 Python 基础，对前一阶段的知识进行进一步巩固。重点学习了 Python 面向对象编程相关内容，包括类、继承和封装等，同时结合代码对前面学习的基础语法进行综合理解。</p>
+<h3 id="9月23日">
+<a class="header-anchor" href="#9%e6%9c%8823%e6%97%a5"></a>
+9月23日
+</h3><p>开始复现 R-MSFM 项目。根据项目文档制作ubuntu安装盘，安装ubuntu系统</p>
+<h3 id="9月24日">
+<a class="header-anchor" href="#9%e6%9c%8824%e6%97%a5"></a>
+9月24日
+</h3><p>参照R‑MSFM零基础教程，完成NVIDIA驱动、CUDA、cuDNN、PyTorch环境配置以及Anaconda虚拟环境搭建。创建rmsfm专用conda虚拟环境，安装适配版本Python、PyTorch及项目所需依赖库，验证GPU CUDA可用性，为后续项目推理调试准备完整运行环境。
+<img src="/images/canshu.png" alt="程序">
+<img src="/images/cresult.png" alt="结果"></p>
+<h3 id="9月25日">
+<a class="header-anchor" href="#9%e6%9c%8825%e6%97%a5"></a>
+9月25日
+</h3><p>调试 R-MSFM 单图推理脚本，检查测试图片、预训练模型和运行参数。经过调整后成功运行 <code>test_simple.py</code>，完成单张图片的推理。
+<img src="/images/yuantu.jpg" alt="原图">
+<img src="/images/shendutu.jpg" alt="深度图"></p>
+<h3 id="9月26日">
+<a class="header-anchor" href="#9%e6%9c%8826%e6%97%a5"></a>
+9月26日
+</h3><p>学习 PyTorch 官方基础教程，搭配chatgpt讲解。主要学习 Tensor、Dataset 和 DataLoader、Transforms、神经网络构建、自动微分、模型参数优化以及模型保存与加载。重点学习 Tensor 操作、数据加载、nn.Module、loss.backward()、优化器以及 state_dict() 等内容。</p>
+<h3 id="9月27日">
+<a class="header-anchor" href="#9%e6%9c%8827%e6%97%a5"></a>
+9月27日
+</h3><p>使用 Hugo 搭建个人学习博客，学习 Hugo 项目结构,完成博客本地运行、主题配置以及 GitHub 连接，并测试文章提交和推送流程，用于后续记录周报。</p>
+<h2 id="二本周学习总结">
+<a class="header-anchor" href="#%e4%ba%8c%e6%9c%ac%e5%91%a8%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93"></a>
+二、本周学习总结
+</h2><p>本周完成了《Python编程：从⼊门到实践》的前11 章学习，也就是书中第一部分基础知识的学习，掌握 Python 基础语法、数据结构、函数以及类等内容；完成 windows/Linux 双系统和运行环境配置，并成功运行 <code>test_simple.py</code> 完成单图推理；学习 PyTorch 基础教程，了解数据处理、模型构建、自动微分、参数优化以及模型保存加载流程；同时完成 Hugo 博客搭建并连接 GitHub。</p>
+<h2 id="三下周学习计划">
+<a class="header-anchor" href="#%e4%b8%89%e4%b8%8b%e5%91%a8%e5%ad%a6%e4%b9%a0%e8%ae%a1%e5%88%92"></a>
+三、下周学习计划
+</h2><p>下周要学习《Python编程：从⼊门到实践》中的第二部分项目，从项目中巩固学习到的内容。而pytorch是下周重点学习内容，这周仅仅是对pytorch项目的流程做了粗略的了解，简单学习了文档中的基础知识。下周要重点回顾这方面的内容，并结合文档中提供的具体代码示例来理解学习。</p>
         
-        <hr><p>本文2023-03-15首发于<a href='https://yongw2595.github.io/'>reimu</a>，最后修改于2023-03-15</p>]]>
+        <hr><p>本文2026-09-27首发于<a href='https://yongw2595.github.io/'>reimu</a>，最后修改于2026-09-27</p>]]>
       </description>
       
     </item>
