@@ -12,7 +12,7 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Sun, 27 Sep 2026 13:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 13:00:00 +0800</lastBuildDate>
     
     
     <atom:link href="https://yongw2595.github.io/post/index.xml" rel="self" type="application/rss&#43;xml" />
@@ -22,11 +22,67 @@
     
 
     <item>
+      <title>2026年9月28日—10月4日学习周报</title>
+      <link>https://yongw2595.github.io/post/2026-10-04-weekly-report/</link>
+      <pubDate>Sun, 04 Oct 2026 13:00:00 &#43;0800</pubDate>
+      <author>xxx@example.com (reimu)</author>
+      <guid>https://yongw2595.github.io/post/2026-10-04-weekly-report/</guid>
+      <description>
+        <![CDATA[<h1>2026年9月28日—10月4日学习周报</h1><p>作者：reimu（xxx@example.com）</p>
+        
+          <h1 id="2026年9月28日10月4日学习周报">
+<a class="header-anchor" href="#2026%e5%b9%b49%e6%9c%8828%e6%97%a510%e6%9c%884%e6%97%a5%e5%ad%a6%e4%b9%a0%e5%91%a8%e6%8a%a5"></a>
+2026年9月28日—10月4日学习周报
+</h1><h2 id="一本周学习内容">
+<a class="header-anchor" href="#%e4%b8%80%e6%9c%ac%e5%91%a8%e5%ad%a6%e4%b9%a0%e5%86%85%e5%ae%b9"></a>
+一、本周学习内容
+</h2><h3 id="9月28日">
+<a class="header-anchor" href="#9%e6%9c%8828%e6%97%a5"></a>
+9月28日
+</h3><p>学习《Python编程：从入门到实践》第12—13章，开始跟随书本编写“太空侵略者”项目，创建游戏窗口和飞船，熟悉项目中类的定义、实例创建，以及通过方法控制游戏对象的基本方式。</p>
+<h3 id="9月29日">
+<a class="header-anchor" href="#9%e6%9c%8829%e6%97%a5"></a>
+9月29日
+</h3><p>继续学习第14章，完成“太空侵略者”项目中的子弹和外星人等内容，并实现相关控制功能。结合项目代码熟悉不同类之间的调用与协作，例如游戏主程序调用飞船、子弹和外星人对象的方法，共同完成游戏运行流程。</p>
+<p><img src="/images/alien.png" alt="太空"></p>
+<h3 id="9月30日">
+<a class="header-anchor" href="#9%e6%9c%8830%e6%97%a5"></a>
+9月30日
+</h3><p>跟随 B 站教程运行 MNIST 手写数字分类项目，学习 PyTorch 项目的基本结构。使用 <code>Dataset</code> 和 <code>DataLoader</code> 加载数据，并通过张量转换和标准化预处理图像；同时熟悉继承 <code>nn.Module</code> 定义神经网络，以及在 <code>forward</code> 方法中组织模型计算的方式。</p>
+<h3 id="10月1日">
+<a class="header-anchor" href="#10%e6%9c%881%e6%97%a5"></a>
+10月1日
+</h3><p>继续学习模型训练、评估和预测流程。训练代码使用交叉熵损失函数和 Adam 优化器，通过前向计算、损失计算、反向传播和参数更新训练模型，并在测试集上计算准确率、保存较好的模型权重及绘制损失和准确率曲线。加载已保存权重，对测试图片进行推理，并比较预测结果与真实标签。</p>
+<p><img src="/images/train.png" alt="训练">
+<img src="/images/predict.png" alt="预测"></p>
+<h3 id="10月2日10月4日">
+<a class="header-anchor" href="#10%e6%9c%882%e6%97%a510%e6%9c%884%e6%97%a5"></a>
+10月2日—10月4日
+</h3><p>尝试研究理解zipdepth训练代码，进行 ZipDepth 小规模训练测试，配置环境，使用19组 RGB 与 pseudo-depth 数据生成 dataset index，根据ai的提示，备份default，并将batch size 设置为 <code>2</code>、max_steps 设置为 <code>5</code>。成功跑通训练流程,并生成 <code>epoch_0.pth</code> 和 <code>final_model.pth</code> 模型文件。</p>
+<p><img src="/images/depth_train.png" alt="训练">
+<img src="/images/base.png" alt="结果"></p>
+<h2 id="二本周学习总结">
+<a class="header-anchor" href="#%e4%ba%8c%e6%9c%ac%e5%91%a8%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93"></a>
+二、本周学习总结
+</h2><p>本周完成了《Python编程：从入门到实践》第12—14章学习和“太空侵略者”项目实践，进一步熟悉了类的定义、实例与方法调用，以及多个类之间的协作；通过 MNIST 项目初步熟悉 PyTorch 中的数据加载、模型定义、训练评估、权重保存与加载和图片预测流程；同时完成 ZipDepth 小规模训练测试，解决依赖和索引路径问题，并成功生成模型文件。</p>
+<h2 id="三下周学习计划">
+<a class="header-anchor" href="#%e4%b8%89%e4%b8%8b%e5%91%a8%e5%ad%a6%e4%b9%a0%e8%ae%a1%e5%88%92"></a>
+三、下周学习计划
+</h2><p>继续研究zipdepth项目代码，读懂数据环境完整交接报告，完成交接工作并继续优化。</p>
+        
+        <hr><p>本文2026-10-04首发于<a href='https://yongw2595.github.io/'>reimu</a>，最后修改于2026-10-04</p>]]>
+      </description>
+      
+    </item>
+    
+    
+
+    <item>
       <title>2026年9月21日—9月27日学习周报</title>
-      <link>https://yongw2595.github.io/post/2026-09-27-weekly-report-2/</link>
+      <link>https://yongw2595.github.io/post/2026-09-27-weekly-report-/</link>
       <pubDate>Sun, 27 Sep 2026 13:00:00 &#43;0800</pubDate>
       <author>xxx@example.com (reimu)</author>
-      <guid>https://yongw2595.github.io/post/2026-09-27-weekly-report-2/</guid>
+      <guid>https://yongw2595.github.io/post/2026-09-27-weekly-report-/</guid>
       <description>
         <![CDATA[<h1>2026年9月21日—9月27日学习周报</h1><p>作者：reimu（xxx@example.com）</p>
         
