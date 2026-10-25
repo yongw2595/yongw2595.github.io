@@ -12,7 +12,7 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Sun, 18 Oct 2026 13:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 13:00:00 +0800</lastBuildDate>
     
     
     <atom:link href="https://yongw2595.github.io/post/index.xml" rel="self" type="application/rss&#43;xml" />
@@ -22,52 +22,58 @@
     
 
     <item>
-      <title>2026年10月12日—10月18日学习周报</title>
-      <link>https://yongw2595.github.io/post/2026-10-25-weekly-report/</link>
-      <pubDate>Sun, 18 Oct 2026 13:00:00 &#43;0800</pubDate>
+      <title>2026年10月19日—10月25日学习周报</title>
+      <link>https://yongw2595.github.io/post/2026-10-25-weekly-report-1/</link>
+      <pubDate>Sun, 25 Oct 2026 13:00:00 &#43;0800</pubDate>
       <author>xxx@example.com (reimu)</author>
-      <guid>https://yongw2595.github.io/post/2026-10-25-weekly-report/</guid>
+      <guid>https://yongw2595.github.io/post/2026-10-25-weekly-report-1/</guid>
       <description>
-        <![CDATA[<h1>2026年10月12日—10月18日学习周报</h1><p>作者：reimu（xxx@example.com）</p>
+        <![CDATA[<h1>2026年10月19日—10月25日学习周报</h1><p>作者：reimu（xxx@example.com）</p>
         
-          <h1 id="2026年10月12日10月18日学习周报">
-<a class="header-anchor" href="#2026%e5%b9%b410%e6%9c%8812%e6%97%a510%e6%9c%8818%e6%97%a5%e5%ad%a6%e4%b9%a0%e5%91%a8%e6%8a%a5"></a>
-2026年10月12日—10月18日学习周报
+          <h1 id="2026年10月19日10月25日学习周报">
+<a class="header-anchor" href="#2026%e5%b9%b410%e6%9c%8819%e6%97%a510%e6%9c%8825%e6%97%a5%e5%ad%a6%e4%b9%a0%e5%91%a8%e6%8a%a5"></a>
+2026年10月19日—10月25日学习周报
 </h1><h2 id="一本周学习内容">
 <a class="header-anchor" href="#%e4%b8%80%e6%9c%ac%e5%91%a8%e5%ad%a6%e4%b9%a0%e5%86%85%e5%ae%b9"></a>
 一、本周学习内容
-</h2><h3 id="10月12日">
-<a class="header-anchor" href="#10%e6%9c%8812%e6%97%a5"></a>
-10月12日
-</h3><p>完成科技论文写作作业，按照课程上演示的方法，检索出发布时间较近，刊登平台权威的中文期刊，并简要阅读摘要学习。</p>
-<h3 id="10月13日">
-<a class="header-anchor" href="#10%e6%9c%8813%e6%97%a5"></a>
-10月13日
-</h3><p>初步学习使用debug，掌握如何打断点，单步执行、进入和跳出函数。结合实际的zipdepth项目逐步阅读代码。</p>
-<h3 id="10月14日">
-<a class="header-anchor" href="#10%e6%9c%8814%e6%97%a5"></a>
-10月14日
-</h3><p>借助 GPT 生成 B2-V12-N1-S 项目的学习入口 <code>debug_model.py</code>，将单图前向推理的主要步骤展开，结合代码逐步学习从输入图片到深度预测的调用流程。首先阅读模型配置、编码器与解码器创建、设备选择和推理模式设置。</p>
-<h3 id="10月15日">
-<a class="header-anchor" href="#10%e6%9c%8815%e6%97%a5"></a>
-10月15日
-</h3><p>继续阅读 <code>debug_model.py</code> 及其调用的编码器代码，学习 Spatial-Mamba 编码器的三个阶段和多尺度特征提取流程，核对 <code>stage1</code>、<code>stage2</code>、<code>stage3_2</code> 和 <code>stage3_4</code> 的来源及输出尺寸。结合实际输入尺寸，理解通道数、空间分辨率、下采样和特征布局转换之间的关系。</p>
-<p>对于 SSM 等内部实现较复杂的模块，暂时以理解其功能、输入输出和调用关系为主，先梳理整体推理流程，待建立整体认识后再深入学习其内部计算原理。</p>
-<h3 id="10月16日">
-<a class="header-anchor" href="#10%e6%9c%8816%e6%97%a5"></a>
-10月16日
-</h3><p>围绕 <code>decode_three_rounds()</code>、<code>make_base()</code> 和 <code>update_prediction()</code>，学习三轮预测的计算过程。第一轮利用基础特征进行预测；第二轮结合当前上下文、<code>e3</code> 和 <code>e2</code> 生成 <code>bridge</code>；第三轮沿用第二轮的 <code>bridge</code>，结合新的上下文和 <code>e1</code> 生成 <code>handoff</code>，再用于修正预测特征。</p>
-<h3 id="10月17日">
-<a class="header-anchor" href="#10%e6%9c%8817%e6%97%a5"></a>
-10月17日
-</h3><p>开始重点学习编码器中的核心 SSM 流程，梳理归一化、输入投影、主分支与门控分支拆分、深度卷积、序列展平和状态扫描的顺序。补充理解通道、线性层、矩阵乘法、逐元素乘法和广播等基础操作。</p>
-<p>重点学习 <code>dts</code>、<code>Bs</code>、<code>Cs</code> 的生成方式，理解同一位置的多个通道如何通过投影得到动态参数，以及低维 <code>dts</code> 如何再次投影、加偏置并经过 Softplus 得到实际步长。结合数值例子理解状态更新中旧状态的保留和新输入的写入，区分可学习权重与根据当前输入计算出的参数。</p>
-<h3 id="10月18日">
-<a class="header-anchor" href="#10%e6%9c%8818%e6%97%a5"></a>
-10月18日
-</h3><p>对照 Spatial-Mamba 论文和项目中的 <code>StructureAwareSSM</code> 实现，查找论文公式、结构图与代码的对应部分并逐项学习。重点将论文中的输入相关参数生成、状态转移、结构感知状态融合（SASF）和观测输出，分别与代码中的 <code>dts</code>、<code>Bs</code>、<code>Cs</code> 生成、<code>selective_scan()</code>、<code>state_fusion()</code> 以及 <code>h * Cs + xs * Ds</code> 对应起来，结合代码理解各公式的含义和执行顺序。</p>
+</h2><h3 id="10月19日">
+<a class="header-anchor" href="#10%e6%9c%8819%e6%97%a5"></a>
+10月19日
+</h3><p>回顾dubug_model.py为入口的单图深度推理，学习各个模块的功能，为什么这么设计。</p>
+<h3 id="10月20日">
+<a class="header-anchor" href="#10%e6%9c%8820%e6%97%a5"></a>
+10月20日
+</h3><p>借助 GPT 生成 B2-V12-N1-S 项目的学习入口 <code>debug_train.py</code>，学习用前帧与相邻帧获取相机运动，利用深度和相机运动，把相邻帧重建到当前视角。但再学习过程中发现缺乏相关理论知识，难以理解代码。</p>
+<h3 id="10月21日">
+<a class="header-anchor" href="#10%e6%9c%8821%e6%97%a5"></a>
+10月21日
+</h3><p>系统的学习《视觉SLAM十四讲》中三维空间刚体运动和相机与图像。学习了有关旋转矩阵、坐标变换、相机内参与投影的知识。</p>
+<h3 id="10月22日">
+<a class="header-anchor" href="#10%e6%9c%8822%e6%97%a5"></a>
+10月22日
+</h3><p>学习位姿预测网络的调用流程，分析 <code>predict_poses2()</code> 函数，理解如何通过相邻帧图像预测相机的相对运动（旋转和平移），并且通过Rodrigues公式获取旋转矩阵并和平移合并成变换矩阵，以及预测结果在图像重投影中的作用。</p>
+<h3 id="10月23日">
+<a class="header-anchor" href="#10%e6%9c%8823%e6%97%a5"></a>
+10月23日
+</h3><p>学习 <code>generate_images_pred()</code> 函数的执行流程，理解如何利用预测深度、相机内参及相对位姿完成三维反投影、坐标变换和图像重投影，生成重建图像。</p>
+<h3 id="10月24日">
+<a class="header-anchor" href="#10%e6%9c%8824%e6%97%a5"></a>
+10月24日
+</h3><p>梳理 <code>debug_train</code> 的整体训练流程，理解数据加载、深度预测、位姿估计、图像重投影及损失计算等关键步骤，明确各模块之间的调用关系与数据传递过程。</p>
+<h3 id="10月25日">
+<a class="header-anchor" href="#10%e6%9c%8825%e6%97%a5"></a>
+10月25日
+</h3><p>整理本周学习内容，制作汇报PPT，重点梳理项目整体训练流程及核心模块的功能与工作原理。</p>
+<h2 id="二本周学习总结">
+<a class="header-anchor" href="#%e4%ba%8c%e6%9c%ac%e5%91%a8%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93"></a>
+二、本周学习总结
+</h2><p>这周主要是学习项目所需的基础知识，梳理了训练流程，熟悉了每个模块的功能。但是对于本周的核心工作完成的不好，我对于为画图做准备只停留在要想画好图要对项目有充分了解，所以汇报ppt是展示我对核心模块的理解，讲解它如何工作，但是汇报应该是对于画图这个核心任务的汇报，汇报应当和画图一样，精简展示亮点。</p>
+<h2 id="三下周学习计划">
+<a class="header-anchor" href="#%e4%b8%89%e4%b8%8b%e5%91%a8%e5%ad%a6%e4%b9%a0%e8%ae%a1%e5%88%92"></a>
+三、下周学习计划
+</h2><p>下周我要寻找人工智能，计算机图形学相关领域的顶级会议如NeurIPS，CVPR参考学习画图方法，主次分明的整理好项目的整体流程，编码和解码，区分主要流程与辅助分支，突出网络的核心结构，避免将所有细节堆积在一张图中。在b站等平台上学习科研绘图的相关规范和方法,以及学习汇报技巧。</p>
         
-        <hr><p>本文2026-10-18首发于<a href='https://yongw2595.github.io/'>reimu</a>，最后修改于2026-10-18</p>]]>
+        <hr><p>本文2026-10-25首发于<a href='https://yongw2595.github.io/'>reimu</a>，最后修改于2026-10-25</p>]]>
       </description>
       
     </item>
