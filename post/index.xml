@@ -12,12 +12,68 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Sun, 25 Oct 2026 13:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 +0000</lastBuildDate>
     
     
     <atom:link href="https://yongw2595.github.io/post/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>2026年10月26日—11月1日学习周报</title>
+      <link>https://yongw2595.github.io/post/2026-11-01-weekly-report/</link>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 &#43;0000</pubDate>
+      <author>xxx@example.com (reimu)</author>
+      <guid>https://yongw2595.github.io/post/2026-11-01-weekly-report/</guid>
+      <description>
+        <![CDATA[<h1>2026年10月26日—11月1日学习周报</h1><p>作者：reimu（xxx@example.com）</p>
+        
+          <h1 id="2026年10月26日11月1日学习周报">
+<a class="header-anchor" href="#2026%e5%b9%b410%e6%9c%8826%e6%97%a511%e6%9c%881%e6%97%a5%e5%ad%a6%e4%b9%a0%e5%91%a8%e6%8a%a5"></a>
+2026年10月26日—11月1日学习周报
+</h1><h2 id="一本周学习内容">
+<a class="header-anchor" href="#%e4%b8%80%e6%9c%ac%e5%91%a8%e5%ad%a6%e4%b9%a0%e5%86%85%e5%ae%b9"></a>
+一、本周学习内容
+</h2><h3 id="10月26日">
+<a class="header-anchor" href="#10%e6%9c%8826%e6%97%a5"></a>
+10月26日
+</h3><p>学习绘图方法</p>
+<h3 id="10月27日">
+<a class="header-anchor" href="#10%e6%9c%8827%e6%97%a5"></a>
+10月27日
+</h3><p>完成机械学习作业，设计支持向量机（SVM）实现 MNIST 手写数字识别的小项目并完成报告。</p>
+<h3 id="10月28日">
+<a class="header-anchor" href="#10%e6%9c%8828%e6%97%a5"></a>
+10月28日
+</h3><p>阅读《ZipDepth: Bringing Lightweight Zero-Shot Monocular Depth Anywhere, on Any Device》，梳理研究背景、网络架构与训练方法。了解到本项目旨在通过结合可重参数化的轻量化编码器–解码器、硬件自适应凸上采样和大规模多领域知识蒸馏，实现了零样本泛化能力与边缘设备实时推理效率之间的有效平衡。</p>
+<h3 id="10月29日">
+<a class="header-anchor" href="#10%e6%9c%8829%e6%97%a5"></a>
+10月29日
+</h3><p>继续精读学习ZipDepth文献，结合文章中的训练流程配图，熟悉其训练流程，结合公式和配图了解项目一方面，通过重参数化、多尺度上下文（Multi-scale context）和轻量级特征融合控制计算开销。另一方面，通过保留半分辨率特征和设计凸上采样改善空间细节与深度边界恢复。通过这两方面的方法实现资源受限的条件下达到较好的效率。</p>
+<h3 id="10月30日">
+<a class="header-anchor" href="#10%e6%9c%8830%e6%97%a5"></a>
+10月30日
+</h3><p>精读《DepthART: Scaling Foundation Monocular Depth to Tiny Models》，重点分析微型深度模型面临的数据分布偏差和度量深度微调时的几何知识遗忘问题。学习抗偏差数据采样（BRDS）的基本流程，包括特征提取、降维与分层采样；梳理知识蒸馏和相机条件微调（CamFT）两个训练阶段，理解冻结编码器、相机提示与尺度预测头的作用。</p>
+<h3 id="10月31日">
+<a class="header-anchor" href="#10%e6%9c%8831%e6%97%a5"></a>
+10月31日
+</h3><p>精读《Towards Robust Driving Perception: A Flexible Scale-Driven Family for Self-Supervised Monocular Depth Estimation》（FlexDepth），梳理模型整体结构和两阶段自监督训练流程。重点学习尺度驱动解码器（SDD）的设计思路，比较传统 U-Net 类解码器与 SDD 在预卷积、动态上采样、跳跃连接和特征融合方面的区别，理解 HEB、HPB 以及不同规模模型预测头的选择，并形成初步笔记。整理Stage1 Only和Stage1+Stage2对比实验的流程，查看github上提供的代码是否完整并与文章中保持一致。下载kitti数据集。</p>
+<h3 id="11月1日">
+<a class="header-anchor" href="#11%e6%9c%881%e6%97%a5"></a>
+11月1日
+</h3><p>继续学习flexdepth文章，了解第二阶段是利用训练早期与末期的视差预测差异，结合自适应阈值生成动态区域掩码，降低动态物体对自监督训练的干扰。回顾并整理 ZipDepth、DepthART 和 FlexDepth 三篇文献的阅读笔记，从研究问题、网络结构、训练数据、监督方式、关键创新与实验结果等方面进行对比。</p>
+<h2 id="二本周学习总结">
+<a class="header-anchor" href="#%e4%ba%8c%e6%9c%ac%e5%91%a8%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93"></a>
+二、本周学习总结
+</h2><p>本周主要围绕单目深度估计方向的三篇文献开展精读与笔记整理。通过阅读 ZipDepth，进一步理解了轻量化编码器–解码器设计、结构重参数化和多领域知识蒸馏；通过阅读 DepthART，学习了数据采样偏差、相对深度与度量深度的区别，以及冻结编码器进行相机条件微调的思路；通过阅读 FlexDepth，重点理解了尺度驱动解码器的组成和两阶段静态–动态解耦训练方法。通过三篇文章所使用的方法和文章中所提及的各类方法，大致了解了当前轻量化单目深度估计的发展趋势和研究
+方法。</p>
+        
+        <hr><p>本文2026-11-01首发于<a href='https://yongw2595.github.io/'>reimu</a>，最后修改于2026-11-01</p>]]>
+      </description>
+      
+    </item>
     
     
 
