@@ -12,12 +12,71 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 00:00:00 +0000</lastBuildDate>
     
     
     <atom:link href="https://yongw2595.github.io/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>2026年11月2日—11月8日学习周报</title>
+      <link>https://yongw2595.github.io/post/2026-11-02_to_2026-11-08-weekly-report/</link>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 &#43;0000</pubDate>
+      <author>xxx@example.com (reimu)</author>
+      <guid>https://yongw2595.github.io/post/2026-11-02_to_2026-11-08-weekly-report/</guid>
+      <description>
+        <![CDATA[<h1>2026年11月2日—11月8日学习周报</h1><p>作者：reimu（xxx@example.com）</p>
+        
+          <h1 id="2026年11月2日11月8日学习周报">
+<a class="header-anchor" href="#2026%e5%b9%b411%e6%9c%882%e6%97%a511%e6%9c%888%e6%97%a5%e5%ad%a6%e4%b9%a0%e5%91%a8%e6%8a%a5"></a>
+2026年11月2日—11月8日学习周报
+</h1><h2 id="一本周学习内容">
+<a class="header-anchor" href="#%e4%b8%80%e6%9c%ac%e5%91%a8%e5%ad%a6%e4%b9%a0%e5%86%85%e5%ae%b9"></a>
+一、本周学习内容
+</h2><h3 id="11月2日">
+<a class="header-anchor" href="#11%e6%9c%882%e6%97%a5"></a>
+11月2日
+</h3><p>阅读FlexDepth论文，重点学习其提出的SDD解码其和Two-Stage Static-Dynamic Decoupled Training。了解其如何利用掩码正态分布损失和几何深度平滑损失，改善动态区域的深度预测。</p>
+<h3 id="11月3日">
+<a class="header-anchor" href="#11%e6%9c%883%e6%97%a5"></a>
+11月3日
+</h3><p>测试FlexDepth KITTI官方训练权重在Cityscapes上测试的得到的精度，并着手开始训练Stage1 Only和Stage1+2的权重以测试是否能达到论文中的效果。</p>
+<h3 id="11月4日">
+<a class="header-anchor" href="#11%e6%9c%884%e6%97%a5"></a>
+11月4日
+</h3><p>训练结束后得到权重，测试后得出结论Stage1+2确实能够提升跨数据集的精度。阅读ZipDepth，了解实现在较低计算开销下取得具有竞争力的零样本预测性能的方法。学习其核心的结构重参数模块和根据不用的硬件选择不同的上采样方式。</p>
+<h3 id="11月5日">
+<a class="header-anchor" href="#11%e6%9c%885%e6%97%a5"></a>
+11月5日
+</h3><p>准备材料，备考科技论文写作</p>
+<h3 id="11月6日">
+<a class="header-anchor" href="#11%e6%9c%886%e6%97%a5"></a>
+11月6日
+</h3><p>精读DepthART，了解如何从相对深度得到度量深度，为何要冻结编码器。</p>
+<h3 id="11月7日">
+<a class="header-anchor" href="#11%e6%9c%887%e6%97%a5"></a>
+11月7日
+</h3><p>整理笔记，回顾阅读的三篇文献，制作ppt</p>
+<h3 id="11月8日">
+<a class="header-anchor" href="#11%e6%9c%888%e6%97%a5"></a>
+11月8日
+</h3><p>继续学习三篇文章，归纳总结文章解决问题，所用技术，根据流程图串联起各个模块。</p>
+<h2 id="二本周学习总结">
+<a class="header-anchor" href="#%e4%ba%8c%e6%9c%ac%e5%91%a8%e5%ad%a6%e4%b9%a0%e6%80%bb%e7%bb%93"></a>
+二、本周学习总结
+</h2><p>本周围绕轻量级单目深度估计开展了论文阅读、模型训练和跨数据集测试。</p>
+<h2 id="三下周学习计划">
+<a class="header-anchor" href="#%e4%b8%89%e4%b8%8b%e5%91%a8%e5%ad%a6%e4%b9%a0%e8%ae%a1%e5%88%92"></a>
+三、下周学习计划
+</h2><p>下周计划学习有监督相关的轻量级单目深度估计，寻找相关期刊了解当前技术现状。</p>
+        
+        <hr><p>本文2026-11-08首发于<a href='https://yongw2595.github.io/'>reimu</a>，最后修改于2026-11-08</p>]]>
+      </description>
+      
+    </item>
     
     
 
